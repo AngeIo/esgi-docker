@@ -180,8 +180,14 @@ Observez la sortie : on remarque que chacune des couches du système de fichiers
 ## 6- La pratique pour aller plus loin
 
 > Quelle commande docker permet d'afficher les différentes couches d'une image ? 
+```sh
+$ docker image history <nom de l'image>
+```
 
 > Quelle commande docker permet de supprimer toutes les images non utilisées ? 
+```sh
+$ docker image prune
+```
 
 > Que permet de faire la commande `docker image save` ?
 
