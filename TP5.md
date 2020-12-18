@@ -7,11 +7,27 @@
 
 > Que permet de faire la commande suivante `docker network inspect ngnet` ?
 
+Cela affiche le fichier de configuration du réseau virtuel nommé ngnet
+
 > Quel argument permet de connecter un conteneur que l'on va lancer à un network créé préalablement ? 
 
-> Quels sont les 3 principaux types de networks qui existent ? 
+docker run --rm -dit --network ngnet
+
+> Quels sont les 3 principaux types de networks qui existent ?
+
+- bridge
+- host
+- none
 
 > Pour quel besoin pourrait-on utiliser la notion de networks avec Docker ?
 
+Pour permettre à plusieurs conteneurs de communiquer entre-eux en les connectant au même réseau
+
 > Quelle suite de commandes Docker permet de créer un network de type `bridge` personnalisé, de connecter ce network au conteneur et de vérifier que ce network est bien utilisé par une nouvelle carte réseau eth1 ? (eth0 étant le réseau par défaut bridge déjà géré par Docker)
 Vous devrez pour ça obligatoirement utiliser un nombre exact de 3 commandes Docker. 
+
+```sh
+docker network create --driver bridge mybridge
+docker network connect ...
+docker container run --network mybridge ...
+```
