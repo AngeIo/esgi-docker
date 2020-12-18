@@ -30,4 +30,6 @@ Vous devrez pour ça obligatoirement utiliser un nombre exact de 3 commandes Doc
 docker network create --driver bridge mybridge
 docker network connect ...
 docker container run --network mybridge ...
+docker container inspect <nom>
+docker network inspect <nom>
 ```
