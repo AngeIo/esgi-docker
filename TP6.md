@@ -103,6 +103,6 @@ On peut ensuite créer notre image en utilisant la commande :
 
 `docker image build .`
 
-Cett commande devrait alors vous générer une nouvelle image, trouvable via la commande 
+Cette commande devrait alors vous générer une nouvelle image, trouvable via la commande 
 
 `docker images` 

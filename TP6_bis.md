@@ -5,7 +5,7 @@
 
 ## 1 - Création d'une image à l'aide d'un Dockerfile en Multistaging
 
-Nous avons vu dans le cours qu'il était possible et d'ailleurs recommandée de créer des images les plus petites possibles afin d'assurer de la performance et puis surtout éviter les failles potentielles de sécurité. Pour répondre à ce besoin, on utilise le Multistaging. Le concept en soi est simple, on construir une image à partir d'images intermédiaires qu'on va "jeter" afin de ne garder que le nécessaire. 
+Nous avons vu dans le cours qu'il était possible et d'ailleurs recommandée de créer des images les plus petites possibles afin d'assurer de la performance et puis surtout éviter les failles potentielles de sécurité. Pour répondre à ce besoin, on utilise le Multistaging. Le concept en soi est simple, on construit une image à partir d'images intermédiaires qu'on va "jeter" afin de ne garder que le nécessaire. 
 
 C'est donc ce que vous allez devoir construire maintenant en autonomie. Afin de réaliser ce TP vous allez devoir réaliser les actions suivantes : 
 
