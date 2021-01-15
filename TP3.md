@@ -7,10 +7,18 @@
 
 > Que permet de faire la commande suivante `docker container run alpine ls -l` ?
 
-> Quel argument permet de supprimer un container automatiquement une fois celui-ci arrêté ? 
+Elle permet de lancer un conteneur avec l'image alpine pour exécuter la commande "ls -l", affiche le résultat et il s'arrête juste après
+
+> Quel argument permet de supprimer un container automatiquement une fois celui-ci arrêté ?
+
+docker container prune
 
 > Comment partager un volume entre mon hôte local et un conteneur ? 
 
+-v cheminsurlhotesource:cheminsurleconteneurdestination
+
 > Que permet de faire la commande docker suivante `docker container exec <nom_conteneur> ls -l` ?
 
-> Quelle ligne de commande docker permet de créer un conteneur de type serveur web permettant d'héberger votre code situé dans votre répertoire courant ? 
+Elle permet, sur un conteneur déjà lancé ... d'exécuter la commande "ls -l", affiche le résultat
+
+> Quelle ligne de commande docker permet de créer un conteneur de type serveur web permettant d'héberger votre code situé dans votre répertoire courant ?
