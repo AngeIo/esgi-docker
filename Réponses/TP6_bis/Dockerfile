@@ -5,12 +5,6 @@ LABEL maintainer="GERARD Angelo"
 # Create and change working directory
 WORKDIR /app
 
-# Add application requirements
-#COPY requirements.txt .
-
-# Install requirements
-#RUN pip install -r requirements.txt
-
 # Add application
 COPY app.js .
 #COPY config.py .
